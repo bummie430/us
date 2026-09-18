@@ -26,7 +26,7 @@
       background: #111;
     }
 
-    /* Lock Screen Background Image */
+    
     .background {
       position: absolute;
       top: 0;
@@ -38,7 +38,7 @@
       z-index: 1;
     }
 
-    /* Lock Screen Keypad Overlay */
+   
     .lock-container {
       position: relative;
       z-index: 2;
@@ -61,7 +61,6 @@
       text-shadow: 0 2px 4px rgba(0,0,0,0.5);
     }
 
-    /* Passcode Dots */
     .dots-container {
       display: flex;
       justify-content: center;
@@ -81,7 +80,6 @@
       background-color: white;
     }
 
-    /* Keypad Grid */
     .keypad {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -111,7 +109,7 @@
       transform: scale(0.95);
     }
 
-    /* Error Popup Modal */
+    
     .modal {
       position: absolute;
       top: 50%;
@@ -153,7 +151,7 @@
       cursor: pointer;
     }
 
-    /* Proposal Page */
+
     .content-page {
       position: absolute;
       top: 0;
@@ -240,7 +238,7 @@
       transition: top 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), left 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
-    /* YES POPUP MODAL */
+    
     .yes-modal {
       position: fixed;
       top: 50%;
@@ -292,7 +290,6 @@
       transform: scale(1.05);
     }
 
-    /* GENERAL PINK ALBUM PAGE STYLES */
     .pink-page {
       position: fixed;
       top: 0;
@@ -332,7 +329,7 @@
       padding: 20px;
     }
 
-    /* CENTER SMALL LOCK/UNLOCK TOGGLE BUTTON FOR PAGE 4 */
+  
     .center-lock-toggle {
       background: rgba(255, 255, 255, 0.85);
       border: 2px solid #ff4d6d;
@@ -357,7 +354,6 @@
       color: white;
     }
 
-    /* HEADER & SUBTITLE WRAPPER */
     .header-container {
       text-align: center;
       margin-bottom: 20px;
@@ -383,7 +379,6 @@
       opacity: 0.9;
     }
 
-    /* PAGE 1: 12-PHOTO GRID */
     .album-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -408,7 +403,7 @@
       }
     }
 
-    /* PAGE 2 FLEX LAYOUT */
+   
     .album-flex-big {
       display: flex;
       flex-wrap: wrap;
@@ -444,7 +439,6 @@
       border-radius: 8px;
     }
 
-    /* PAGE 4 LETTER CARD & STICKERS */
     .letter-card {
       position: relative;
       background: rgba(255, 255, 255, 0.95);
@@ -474,7 +468,6 @@
       margin-bottom: 0;
     }
 
-    /* Floating Cute Stickers */
     .sticker {
       position: absolute;
       font-size: 2rem;
@@ -513,7 +506,6 @@
       100% { transform: translateY(-8px) rotate(5deg); }
     }
 
-    /* NAVIGATION BUTTON CONTAINERS & BUTTONS */
     .nav-btn-container {
       display: flex;
       align-items: center;
@@ -623,7 +615,6 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
-    /* MESSENGER FULL GALLERY OVERLAY */
     .gallery-overlay {
       position: fixed;
       top: 0;
@@ -677,7 +668,6 @@
       transform: scale(1.05);
     }
 
-    /* FULLSCREEN PHOTO VIEWER MODAL WITH SWIPE ARROWS */
     .photo-modal {
       position: fixed;
       top: 0;
@@ -737,7 +727,6 @@
       z-index: 10;
     }
 
-    /* Navigation Arrows */
     .nav-arrow {
       position: absolute;
       top: 50%;
@@ -772,7 +761,6 @@
       right: 15px;
     }
 
-    /* Unlocked states */
     .unlocked .lock-container {
       opacity: 0;
       transform: scale(1.1);
@@ -789,7 +777,6 @@
 
   <div class="background"></div>
 
-  <!-- Passcode Screen -->
   <div class="lock-container" id="lockScreen">
     <div class="title">Enter a passcode</div>
     
@@ -818,13 +805,11 @@
     </div>
   </div>
 
-  <!-- Error Modal -->
   <div class="modal" id="errorModal">
     <p>Nope wrong psw Myo ta me lyy !</p>
     <button onclick="closeModal()">Try again!</button>
   </div>
 
-  <!-- Proposal Page -->
   <div class="content-page">
     <div class="proposal-card">
       <div>
@@ -839,13 +824,11 @@
     </div>
   </div>
 
-  <!-- Yes Response Modal -->
   <div class="yes-modal" id="yesModal">
     <p>YESS I LOVE YOU MORE THAN ANYTHING 💕</p>
     <button onclick="closeYesModalAndProceed()">SAME ❤️</button>
   </div>
 
-  <!-- PAGE 1: PINK PHOTO ALBUM PAGE -->
   <div class="pink-page" id="pinkPage">
     <div class="header-container">
       <h1 class="pink-header">Our Memories Together 💕</h1>
@@ -872,7 +855,6 @@
     </div>
   </div>
 
-  <!-- PAGE 2: 5 UNIFORM PHOTO FRAMES -->
   <div class="pink-page" id="pageTwo" style="justify-content: center; align-items: center; display: flex; flex-direction: column;">
     <div class="header-container" style="margin-bottom: 25px;">
       <h1 class="pink-header">Thu lyy yat sate soe & sate koute moment :3 💕</h1>
@@ -906,14 +888,12 @@
     </div>
   </div>
 
-  <!-- PAGE 3: MESSENGER STACK ALBUM -->
   <div class="pink-page" id="pageThree" style="justify-content: center; align-items: center;">
     <div class="header-container" style="margin-bottom: 10px;">
       <h1 class="pink-header">More memory we took 📸💕</h1>
       <div class="pink-subtitle">( Click to open album )</div>
     </div>
 
-    <!-- Messenger Stacked Media Card -->
     <div class="messenger-album-card" onclick="openGallery()">
       <div class="stack-layer layer-back-2"></div>
       <div class="stack-layer layer-back-1"></div>
@@ -931,14 +911,13 @@
     </div>
   </div>
 
-  <!-- PAGE 4: MESSAGE PAGE -->
   <div class="pink-page" id="pageFour">
     <div class="header-container">
       <h1 class="pink-header">Messages for my future wife 💕</h1>
     </div>
 
     <div class="letter-card">
-      <!-- Transparent Sticker Overlays -->
+      
       <span class="sticker sticker-top-left">🎀</span>
       <span class="sticker sticker-top-right">✨</span>
       <span class="sticker sticker-bottom-left">🧸</span>
@@ -962,11 +941,10 @@
       <button class="back-btn" onclick="backToPageThree()">❮ Back</button>
     </div>
 
-    <!-- Small Centered Unlock/Lock Toggle Button -->
     <button class="center-lock-toggle" id="lockToggleBtn" onclick="toggleLockAndReturn()" title="Lock Screen">🔓</button>
   </div>
 
-  <!-- MESSENGER FULL GALLERY OVERLAY -->
+  
   <div class="gallery-overlay" id="galleryOverlay">
     <button class="modal-close-btn" style="top: 20px; right: 20px;" onclick="closeGallery()">✕</button>
     <div class="gallery-title">kawaii couple 💕</div>
@@ -974,7 +952,6 @@
     <div class="gallery-grid" id="galleryGrid"></div>
   </div>
 
-  <!-- FULLSCREEN PHOTO MODAL WITH NAVIGATION ARROWS -->
   <div class="photo-modal" id="photoModal" onclick="closePhoto()">
     <button class="nav-arrow prev" onclick="event.stopPropagation(); changePhoto(-1)">❮</button>
     
@@ -991,7 +968,7 @@
     let currentInput = "";
     const TOTAL_PHOTOS = 54; 
 
-    // Define arrays for each page's images
+    
     const page1Photos = [
       'photo1.jpg', 'photo2.jpg', 'photo3.jpg', 'photo4.jpg',
       'photo5.jpg', 'photo6.jpg', 'photo7.jpg', 'photo8.jpg',
@@ -1008,7 +985,7 @@
       galleryPhotos.push(`all_photo (${i}).jpg`);
     }
 
-    // Modal state tracker variables
+   
     let currentPhotoList = page1Photos;
     let currentPhotoIndex = 0;
 
@@ -1017,7 +994,7 @@
     const yesModal = document.getElementById('yesModal');
     const noBtn = document.getElementById('noBtn');
 
-    // Automatically load 54 photos matching your "all_photo (X).jpg" format
+   
     const galleryGrid = document.getElementById('galleryGrid');
     galleryPhotos.forEach((src, index) => {
       const img = document.createElement('img');
@@ -1066,24 +1043,23 @@
       updateDots();
     }
 
-    /* UNLOCK-TO-LOCK ANIMATION & RESET FUNCTION */
+    
     function toggleLockAndReturn() {
       const lockBtn = document.getElementById('lockToggleBtn');
-      // Turn into locked icon immediately
       lockBtn.innerText = '🔒';
 
       setTimeout(() => {
-        // Hide all pink pages
+        
         document.querySelectorAll('.pink-page').forEach(page => page.classList.remove('active'));
         
-        // Relock site to reveal passcode screen
+        
         document.body.classList.remove('unlocked');
         
-        // Reset entered passcode state
+        
         currentInput = "";
         updateDots();
         
-        // Reset NO button positioning
+       
         noBtn.style.position = '';
         noBtn.style.top = '';
         noBtn.style.left = '';
@@ -1157,7 +1133,7 @@
       document.getElementById('galleryOverlay').classList.remove('active');
     }
 
-    /* Lightbox Modal Functions */
+    
     function openPhoto(index, photoArray) {
       currentPhotoList = photoArray;
       currentPhotoIndex = index;
@@ -1180,7 +1156,7 @@
       document.getElementById('photoModal').classList.remove('active');
     }
 
-    // Keyboard Arrow Keys Navigation
+    
     document.addEventListener('keydown', function(event) {
       const modal = document.getElementById('photoModal');
       if (modal.classList.contains('active')) {
